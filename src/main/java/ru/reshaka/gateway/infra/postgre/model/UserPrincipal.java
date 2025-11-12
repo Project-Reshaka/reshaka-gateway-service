@@ -23,7 +23,7 @@ import java.util.UUID;
 public class UserPrincipal implements UserDetails {
 
     @Id
-    private UUID id;
+    private Long id;
 
     @Column("password_hash")
     private String passwordHash;

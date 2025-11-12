@@ -8,7 +8,7 @@ import ru.reshaka.gateway.infra.postgre.model.UserPrincipal;
 import java.util.UUID;
 
 @Repository
-public interface UserRepository extends ReactiveCrudRepository<UserPrincipal, UUID> {
+public interface UserRepository extends ReactiveCrudRepository<UserPrincipal, Long> {
 
     Mono<UserPrincipal> findByUsername(String username);
 
